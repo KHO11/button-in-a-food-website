@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <title>Something out of ordinary</title>
+    </head>
+    <style>
+        #heading {
+            background-color: blue;
+            color:white;
+            text-align: center;
+            font-size:60px;
+        }
+
+        #demo {
+            margin-left:150px;
+            
+        }
+
+        #demo2 {
+            margin-left: 350px;
+            
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+        }
+
+        #message {
+            font-size: 30px;
+           
+        }
+
+
+        
+    </style>
+    <body>
+        <header>
+            <h1 id="heading">Random food</h1>
+        </header>
+        <br><br>
+        <img id="demo" src="biscuits.jpeg" width="300" height="300">
+        <img id="demo2" src="rice.jpeg" width="350" height="300">
+
+        <br>
+
+        <button id="button" onclick="myFunction()">Click me</button>
+
+        <p id="text">
+            Food is any substance[1] 
+            consumed to provide nutritional 
+            support for an organism. It is usually 
+            of plant or animal origin, and contains 
+            essential nutrients, such as carbohydrates, 
+            fats, proteins, vitamins, or minerals. The substance 
+            is ingested by an organism and assimilated by the 
+            organism's cells to provide energy, maintain life, 
+            or stimulate growth.
+        </p>
+
+        
+
+        <div id="message"></div>
+        
+    </body>
+    <script>
+        function myFunction() {
+            document.getElementById("text").style.color="red";
+            document.getElementById("demo").style.display="none";
+            document.getElementById("heading").style.color="red";
+
+            document.getElementById("message").innerHTML="Hooray you are better at javascript";
+          
+            document.body.style.backgroundColor="green";
+        }
+
+    </script>
+</html>
